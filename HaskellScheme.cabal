@@ -6,8 +6,8 @@ version:             0.1.0.0
 synopsis:            Scheme built on Haskell
 description:         Learning project to build Scheme with Haskell
 homepage:            https://github.com/cesare/learning-haskell-scheme
-license:             MIT
-license-file:        LICENSE
+license:             OtherLicense
+license-file:        LICENSE.md
 author:              SAWADA Tadashi
 maintainer:          cesare@mayverse.jp
 -- copyright:           
