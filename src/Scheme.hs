@@ -38,6 +38,9 @@ parseString = do
   char '"'
   return $ String x
 
+parseList :: Parser LispVal
+parseList = liftM List $ sepBy parseExpr spaces
+
 parseExpr :: Parser LispVal
 parseExpr = parseAtom
   <|> parseString
