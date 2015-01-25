@@ -3,6 +3,14 @@ module Scheme where
 import Text.ParserCombinators.Parsec hiding (spaces)
 import System.Environment
 
+data LispVal = Atom String
+  | List[LispVal]
+  | DottedList [LispVal] LispVal
+  | Number Integer
+  | String String
+  | Bool Bool
+
+
 spaces :: Parser ()
 spaces = skipMany1 space
 
